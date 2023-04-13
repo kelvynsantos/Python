@@ -1,1 +1,1 @@
-# Python
+# Some random projects and studies with Python
