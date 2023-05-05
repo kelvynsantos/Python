@@ -3,3 +3,4 @@
 /.vscode
 .env
 /Calculator-with-Tkinter/calc
+/Calculator-with-Tkinter/__pycache__
