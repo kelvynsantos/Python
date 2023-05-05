@@ -2,3 +2,4 @@
 /CRUD_MONGO/.env
 /.vscode
 .env
+/Calculator-with-Tkinter/calc
