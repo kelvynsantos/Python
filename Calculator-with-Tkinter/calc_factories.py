@@ -39,17 +39,17 @@ def make_buttons(root) -> List[List[tk.Button]]:
     for row, row_value in enumerate(button_texts, start=2):
         button_row = []
         for col_index, col_value in enumerate(row_value):
-            btn = tk.Button(root, text= col_value)
+            btn = tk.Button(root , text= col_value)
             btn.grid(row=row, column=col_index, stick='news',padx=5,pady=5)
             btn.config(font=('Helvetica',15, 'normal'),pady=40,width=1,background='#f1f2f3', bd=0,cursor='hand2', highlightthickness=0,
                        highlightcolor='#ccc', activebackground='#ccc', highlightbackground='#ccc')
             if col_value in (')', '('):
                 btn.place(width=0.5)
-                btn.grid(row=row, column=col_index, stick='news',padx=(0,2),pady=5)
+                btn.grid(row=row, column=col_index, stick='news',padx=2,pady=5)
 
             else:
-                btn.config(width=1)
-                
+                if col_value == '=' :
+                    btn.config(width=1)
             button_row.append(btn)
         buttons.append(button_row)
     return buttons
